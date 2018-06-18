@@ -1,10 +1,9 @@
 FROM eosio/eos
 
-VOLUME /opt/eosio/bin/data-dir
 WORKDIR /opt/eosio/bin
 
-COPY config.ini /opt/eosio/bin/data-dir/config.ini
-COPY genesis.json /opt/eosio/bin/data-dir/genesis.json
+COPY config.ini /opt/eosio/bin/data-dir/
+COPY genesis.json /opt/eosio/bin/data-dir/
 COPY startup.sh /opt/eosio/bin/
 
 ENV AGENT_NAME="elementgroup"
