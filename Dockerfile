@@ -3,9 +3,9 @@ FROM eosio/eos
 VOLUME /opt/eosio/bin/data-dir
 WORKDIR /opt/eosio/bin
 
-ADD config.ini /opt/eosio/bin/data-dir/config.ini
-ADD genesis.json /opt/eosio/bin/data-dir/genesis.json
-ADD startup.sh /opt/eosio/bin/
+COPY config.ini /opt/eosio/bin/data-dir/config.ini
+COPY genesis.json /opt/eosio/bin/data-dir/genesis.json
+COPY startup.sh /opt/eosio/bin/
 
 ENV AGENT_NAME="elementgroup"
 ENV IP_ADDRESS="0.0.0.0"
