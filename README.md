@@ -1,4 +1,4 @@
-# EOS Mainnet Docker Image
+# EOS Mainnet Docker Image ![Docker Build Status](https://img.shields.io/docker/build/element-group/eos.svg)
 Start a EOS blockchain server running on the mainnet in seconds with Docker.
 
 # Environment Variables
