@@ -7,3 +7,8 @@ Start a EOS blockchain server running on the mainnet in seconds with Docker.
 - `SERVER_NAME` Producer name
 - `SIGNATURE_PUB` Signature provider public key
 - `SIGNATURE_PRIV` Signature provider private key
+
+# Run the Server!
+```
+docker run -it -v /home/EOSDATA-DIR:/opt/eosio/bin/data-dir -p 8888:8888 -p 9876:9876 -e IP_ADDRESS='192.168.1.1' -e AGENT_NAME='EOSserver' elementgroup/eos
+```
